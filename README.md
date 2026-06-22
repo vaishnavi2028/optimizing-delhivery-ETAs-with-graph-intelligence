@@ -183,8 +183,6 @@ The notebooks must be run **in order** — each one produces outputs consumed by
         ↓ corridor_intervention_table.csv, sensitivity_heatmap.png
 ```
 
-> **Note:** `G_rtype.pkl` is ~680 MB. If it exceeds GitHub's file size limit, use [Git LFS](https://git-lfs.github.com/) or exclude it from the repo and regenerate from notebook 01.
-
 ---
 
 ## Tech Stack
@@ -289,7 +287,6 @@ Builds `G_all` and `G_rtype` from the cleaned data. Computes and visualises all 
 
 ## Potential Extensions
 
-- **Streamlit dashboard** - live delay risk scores per hub, interactive corridor lookup, sensitivity sliders for cost parameters (mentioned as optional deliverable in the brief)
 - **Temporal graph modelling** - re-build the graph weekly to capture seasonal drift in corridor delay patterns
 - **Causal inference layer** - propensity score matching or doubly robust estimation to correct for selection bias in the dual regressor approach (FTL tends to be assigned to harder corridors)
 - **Multi-hop path analysis** - for trips with intermediate hubs, model delay propagation across the full route rather than treating each segment independently
